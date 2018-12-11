@@ -1,15 +1,104 @@
 ---
-title: Le Wagon - Middleman
+title: Kitty's Portfolio
 ---
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+<!-- Top banner -->
+<div id="banner">
+  <!-- <div class="wrapper"> -->
+    <div class="banner-container">
+      <div class="banner-content">
+        <!-- <%= image_tag "logo.png", width: "200" %> -->
+        <h1>
+          Hi, I am Chen Sz Ting.
+          <br>
+          I am a Full-stack developer.
+        </h1>
+        <p class="about">
+          <%= link_to "More about this template", "about.html" %>
+        </p>
+      </div>
+    </div>
+  <!-- </div> -->
+</div>
+<!-- End / Top Banner -->
+
+<!-- Portfolio -->
+<div id="works">
+  <div class="wrapper">
+    <div class="container">
+      <h2 class="text-center">
+        Portfolio
+      </h2>
+      <div class="row">
+        <div class="col-xs-12 col-md-4">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path 'lilixia-home.png' %>);">
+            <div class="card-category">Popular</div>
+            <div class="card-description">
+              <h2>Le Wagon Shanghai</h2>
+              <p>Very cool city, the best</p>
+            </div>
+            <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+            <a class="card-link" href="https://lilixia.wogengapp.cn/"></a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+        </div>
+        <div class="col-xs-12 col-sm-4">
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+<!-- End / Portfolio -->
+
+<!-- Skills -->
+<div id="skills">
+  <div class="wrapper">
+    <div class="container">
+      <h2 class="text-center">
+        Skills
+      </h2>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <div class="skill">
+            <div class="skill-title">
+              <h4>Front-end</h4>
+            </div>
+            <div class="skill-description">
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JavaScript</p>
+              <p>WeChat</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="skill">
+            <div class="skill-title">
+              <h4>Backend</h4>
+            </div>
+            <div class="skill-description">
+              <p>Ruby on rails</p>
+              <p>SQL</p>
+              <p>JAVA</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="skill">
+            <div class="skill-title">
+              <h4>Design</h4>
+            </div>
+            <div class="skill-description">
+              <p>Sketch</p>
+              <p>Figma</p>
+              <p>Adobe Illustrator</p>
+              <p>Adobe Photoshop</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End / Skills -->

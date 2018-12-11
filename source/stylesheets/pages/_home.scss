@@ -1,17 +1,48 @@
-#home {
-  background-color: #D23333;
-  color: white;
+.wrapper {
+  height: calc(100vh - 70px);
+  // height: 100vh;
+}
+
+.banner-container {
   height: 100vh;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+#banner {
+  background-color: #D23333;
+  color: white;
   text-align: center;
-  p {
+  p, h1 {
     margin-top: 1.5em;
   }
   a {
     color: rgba(0,0,0,0.4);
     font-weight: bold;
     font-size: 16px;
+  }
+}
+
+#skills {
+  background-color: #6b76ff;
+  color: white;
+}
+
+.skill {
+  height: 250px;
+  border-radius: 10px;
+  background-color: rgba(50, 50, 50, 0.5);
+  text-align: center;
+  .skill-title {
+    padding-top: 20px;
+  }
+  .skill-description {
+    font-size: 16px;
+    padding-top: 10px;
+    font-weight: lighter;
+    letter-spacing: 0.15em;
   }
 }
