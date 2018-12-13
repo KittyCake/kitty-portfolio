@@ -13,9 +13,10 @@ title: Kitty's Portfolio
           <br>
           I am a Full-stack developer.
         </h1>
-        <p class="about">
+        <!-- <p class="about">
           <%= link_to "More about this template", "about.html" %>
-        </p>
+        </p> -->
+    <%= image_tag 'kitty-banner.png', height: "600", id: "kitty-banner" %>
       </div>
     </div>
   <!-- </div> -->
@@ -31,11 +32,14 @@ title: Kitty's Portfolio
       </h2>
       <div class="row">
         <div class="col-xs-12 col-md-4">
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path 'lilixia-home.png' %>);">
+          <div class="card" style="background-image: url(<%= image_path 'lilixia-home.png' %>);">
             <a class="card-link" href="https://lilixia.wogengapp.cn/"></a>
           </div>
         </div>
         <div class="col-xs-12 col-sm-4">
+          <div class="card" style="background-image: url(<%= image_path 'lilixia-qrcode.jpg' %>);">
+            <!-- <a class="card-link" href="https://lilixia.wogengapp.cn/"></a> -->
+          </div>
         </div>
         <div class="col-xs-12 col-sm-4">
         </div>

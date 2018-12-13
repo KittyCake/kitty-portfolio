@@ -30,6 +30,14 @@
   }
 }
 
+#kitty-banner {
+  z-index: 0;
+  position: absolute;
+  bottom: 0px;
+  left: 50px;
+  filter: opacity(40%) grayscale(40%);
+  }
+
 #skills {
   background-color: #6b76ff;
   color: white;
