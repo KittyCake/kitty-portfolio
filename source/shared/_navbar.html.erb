@@ -7,20 +7,21 @@
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-    <%= link_to 'Banner', '#banner', class:"navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to 'Home', '#banner', class:"navbar-wagon-item navbar-wagon-link" %>
     <%= link_to 'Portfolios', '#portfolios', class:"navbar-wagon-item navbar-wagon-link" %>
     <%= link_to 'Skills', '#skills-anchor', class:"navbar-wagon-item navbar-wagon-link" %>
 
     <!-- Profile picture with dropdown list -->
     <div class="navbar-wagon-item">
-      <div class="dropdown">
-        <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+      <img src="<%= image_path 'kitty.jpg' %>" class="avatar" id="navbar-wagon-menu">
+      <!-- <div class="dropdown">
+        <img src="<%= image_path 'kitty.jpg' %>" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
           <li><a href="#">Profile</a></li>
           <li><a href="#">Dashboard</a></li>
           <li><a href="#">Log Out</a></li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </div>
 
