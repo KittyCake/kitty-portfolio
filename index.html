@@ -1,14 +1,29 @@
 <!doctype html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131011401-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131011401-1');
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name=“description”
+          content=“Taiwanese Full-Stack Developer, based in Shanghai, China”>
+    <meta name=“keywords”
+          content=“Chen Sz Ting, developer, Ruby, Ruby on Rails, RoR, HTML, CSS, JavaScript, WeChat Mini Program”>
+    <meta name=“author” content=“Chen Sz Ting”>
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Kitty's Portfolio</title>
-    <link href="stylesheets/application-3407327d.css" rel="stylesheet" />
-    <script src="javascripts/application-93de88c9.js"></script>
+    <link href="stylesheets/application-359c7aad.css" rel="stylesheet" />
+    <script src="javascripts/application-aa659306.js"></script>
     <link href="images/favicon-16c15def.png" rel="icon" type="image/png" />
   </head>
   <body>
@@ -53,7 +68,7 @@
 </div>
 
     <!-- Top banner -->
-<div id="banner">
+<section id="banner">
   <!-- <div class="wrapper"> -->
     <div class="banner-container">
       <div class="banner-content">
@@ -63,35 +78,44 @@
           <br>
           I am a Full-stack developer.
         </h1>
-        <p class="about">
+        <!-- <p class="about">
           <a href="about.html">More about this template</a>
-        </p>
+        </p> -->
+    <img src="images/kitty-banner-159865bb.png" height="600" id="kitty-banner" alt="Kitty banner" />
       </div>
     </div>
   <!-- </div> -->
-</div>
+</section>
 <!-- End / Top Banner -->
 
 <!-- Portfolio -->
 <div id="portfolios">
-  <div class="wrapper">
+  <!-- <div class="wrapper"> -->
     <div class="container">
       <h2 class="text-center">
         Portfolios
       </h2>
-      <div class="row">
-        <div class="col-xs-12 col-md-4">
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(images/lilixia-home-6c7bbd79.png);">
-            <a class="card-link" href="https://lilixia.wogengapp.cn/"></a>
-          </div>
+
+      <div class="toolbar mb2 mt2">
+        <button class="btn fil-cat" href="" data-rel="all">All</button>
+        <button class="btn fil-cat" data-rel="ruby">Ruby on rails</button>
+        <button class="btn fil-cat" data-rel="wechat">WeChat</button>
+      </div>
+
+      <div style="clear:both;"></div>
+      <div id="portfolios-list">
+        <div class="tile scale-anm ruby all">
+          <img src="images/lilixia-home-6c7bbd79.png" alt="Lilixia home" />
         </div>
-        <div class="col-xs-12 col-sm-4">
-        </div>
-        <div class="col-xs-12 col-sm-4">
+        <div class="tile scale-anm ruby wechat all">
+          <img src="images/lilixia-qrcode-ad12308b.jpg" alt="Lilixia qrcode" />
         </div>
       </div>
+
+      <div style="clear:both;"></div>
+
     </div>
-  </div>
+  <!-- </div> -->
 </div>
 <!-- End / Portfolio -->
 
