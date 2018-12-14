@@ -3,7 +3,7 @@ title: Kitty's Portfolio
 ---
 
 <!-- Top banner -->
-<div id="banner">
+<section id="banner">
   <!-- <div class="wrapper"> -->
     <div class="banner-container">
       <div class="banner-content">
@@ -20,32 +20,37 @@ title: Kitty's Portfolio
       </div>
     </div>
   <!-- </div> -->
-</div>
+</section>
 <!-- End / Top Banner -->
 
 <!-- Portfolio -->
 <div id="portfolios">
-  <div class="wrapper">
+  <!-- <div class="wrapper"> -->
     <div class="container">
       <h2 class="text-center">
         Portfolios
       </h2>
-      <div class="row">
-        <div class="col-xs-12 col-md-4">
-          <div class="card" style="background-image: url(<%= image_path 'lilixia-home.png' %>);">
-            <a class="card-link" href="https://lilixia.wogengapp.cn/"></a>
-          </div>
+
+      <div class="toolbar mb2 mt2">
+        <button class="btn fil-cat" href="" data-rel="all">All</button>
+        <button class="btn fil-cat" data-rel="ruby">Ruby on rails</button>
+        <button class="btn fil-cat" data-rel="wechat">WeChat</button>
+      </div>
+
+      <div style="clear:both;"></div>
+      <div id="portfolios-list">
+        <div class="tile scale-anm ruby all">
+          <%= image_tag 'lilixia-home.png' %>
         </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="card" style="background-image: url(<%= image_path 'lilixia-qrcode.jpg' %>);">
-            <!-- <a class="card-link" href="https://lilixia.wogengapp.cn/"></a> -->
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
+        <div class="tile scale-anm ruby wechat all">
+          <%= image_tag 'lilixia-qrcode.jpg' %>
         </div>
       </div>
+
+      <div style="clear:both;"></div>
+
     </div>
-  </div>
+  <!-- </div> -->
 </div>
 <!-- End / Portfolio -->
 
