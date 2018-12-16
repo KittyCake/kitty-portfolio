@@ -22,8 +22,8 @@
     <meta name=“author” content=“Chen Sz Ting”>
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Kitty's Portfolio</title>
-    <link href="stylesheets/application-359c7aad.css" rel="stylesheet" />
-    <script src="javascripts/application-aa659306.js"></script>
+    <link href="stylesheets/application-3ac4d28f.css" rel="stylesheet" />
+    <script src="javascripts/application-972770df.js"></script>
     <link href="images/favicon-16c15def.png" rel="icon" type="image/png" />
   </head>
   <body>
@@ -59,9 +59,9 @@
     <div class="dropdown">
       <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown" role="button"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Host</a></li>
-        <li><a href="#">Trips</a></li>
-        <li><a href="#">Messagese</a></li>
+        <li><a href="#banner">Home</a></li>
+        <li><a href="#portfolios">Portfolios</a></li>
+        <li><a href="#skills-anchor">Skills</a></li>
       </ul>
     </div>
   </div>
@@ -81,89 +81,47 @@
         <!-- <p class="about">
           <a href="about.html">More about this template</a>
         </p> -->
-    <img src="images/kitty-banner-159865bb.png" height="600" id="kitty-banner" alt="Kitty banner" />
+        <img src="images/kitty-banner-159865bb.png" height="600" id="kitty-banner" alt="Kitty banner" />
       </div>
     </div>
   <!-- </div> -->
 </section>
 <!-- End / Top Banner -->
 
-<!-- Portfolio -->
-<div id="portfolios">
-  <!-- <div class="wrapper"> -->
-    <div class="container">
-      <h2 class="text-center">
-        Portfolios
-      </h2>
-
-      <div class="toolbar mb2 mt2">
-        <button class="btn fil-cat" href="" data-rel="all">All</button>
-        <button class="btn fil-cat" data-rel="ruby">Ruby on rails</button>
-        <button class="btn fil-cat" data-rel="wechat">WeChat</button>
-      </div>
-
-      <div style="clear:both;"></div>
-      <div id="portfolios-list">
-        <div class="tile scale-anm ruby all">
-          <img src="images/lilixia-home-6c7bbd79.png" alt="Lilixia home" />
-        </div>
-        <div class="tile scale-anm ruby wechat all">
-          <img src="images/lilixia-qrcode-ad12308b.jpg" alt="Lilixia qrcode" />
-        </div>
-      </div>
-
-      <div style="clear:both;"></div>
-
-    </div>
-  <!-- </div> -->
-</div>
-<!-- End / Portfolio -->
-
 <!-- Skills -->
-<div id="skills">
-  <div class="wrapper">
-    <a name="skills-anchor"></a>
+<section id="skills">
+  <div id="skills-content">
     <div class="container">
       <h2 class="text-center">
-        Skills
+        What I can do
       </h2>
+      <div class="stick"></div>
+      <p class="col-xs-12 col-sm-offset-2 col-sm-8 intro">
+        I am skilled in Ruby on rails, HTML, CSS, Javascript ES6, SQL Database, Sketch, Figma, Adobe illustrator and Adobe Photoshop. Find my works on <a href="https://github.com/KittyCake">Github</a>.
+      </p>
       <!-- <div class="align-items-center"> -->
         <div class="row">
           <div class="col-xs-12 col-sm-4">
             <div class="skill">
+              <img src="images/front-end-96695130.png" alt="Front end" />
               <div class="skill-title">
-                <h4>Front-end</h4>
-              </div>
-              <div class="skill-description">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
-                <p>WeChat</p>
+                <h4>RESPONSIVE WEB DESIGN</h4>
               </div>
             </div>
           </div>
           <div class="col-xs-12 col-sm-4">
             <div class="skill">
+              <img src="images/back-end-d2f37cc2.png" alt="Back end" />
               <div class="skill-title">
-                <h4>Backend</h4>
-              </div>
-              <div class="skill-description">
-                <p>Ruby on rails</p>
-                <p>SQL</p>
-                <p>JAVA</p>
+                <h4>BACK-END DEVELOPMENT</h4>
               </div>
             </div>
           </div>
           <div class="col-xs-12 col-sm-4">
             <div class="skill">
+              <img src="images/wechat-6eaa3f98.png" alt="Wechat" />
               <div class="skill-title">
-                <h4>Design</h4>
-              </div>
-              <div class="skill-description">
-                <p>Sketch</p>
-                <p>Figma</p>
-                <p>Adobe Illustrator</p>
-                <p>Adobe Photoshop</p>
+                <h4>WECHAT MINI PROGRAM</h4>
               </div>
             </div>
           </div>
@@ -171,8 +129,99 @@
       <!-- </div> -->
     </div>
   </div>
-</div>
+</section>
 <!-- End / Skills -->
+
+<!-- Portfolio -->
+<section id="portfolios">
+    <div class="container">
+      <h2 class="text-center">
+        What I create
+      </h2>
+      <div class="stick"></div>
+      <div class="toolbar mb2 mt2">
+        <button class="btn fil-cat" href="" data-rel="all">All</button>
+        <button class="btn fil-cat" data-rel="ruby">Ruby on rails</button>
+        <button class="btn fil-cat" data-rel="web">Website</button>
+        <button class="btn fil-cat" data-rel="wechat">WeChat Mini Program</button>
+      </div>
+
+      <div style="clear:both;"></div>
+      <div id="portfolios-list">
+        <div class="tile scale-anm ruby web all">
+          <figure class="portfolio-figure">
+            <img src="images/lilixia-home-6c7bbd79.png" alt="Lilixia home" />
+            <figcaption class="portfolio-caption">
+              <div class="portfolio-caption-inner">
+                <h3 class="portfolio-title">Lilixia Website</h3>
+                <h4 class="portfolio-cat"></h4>
+                <!-- <div class="btn-group">
+                  <a class="btn-link" href="http://abequitygroup.com" target="_blank"><i class="icon icon-link"></i></a>
+                  <a class="portfolioFancybox btn-zoom" data-fancybox-group="portfolioFancybox2" href="#portfolio2-inline1"><i class="icon icon-eye"></i></a>
+                </div> -->
+              </div>
+            </figcaption>
+            <a href="http://www.lilixia.me/" target="_blank" class="portfolio-link"></a>
+          </figure>
+        </div>
+
+        <div class="tile scale-anm wechat all">
+          <figure class="portfolio-figure">
+            <img src="images/lilixia-qrcode-ad12308b.jpg" alt="Lilixia qrcode" />
+            <figcaption class="portfolio-caption">
+              <div class="portfolio-caption-inner">
+                <h3 class="portfolio-title">Lilixia Mini Program</h3>
+                <h4 class="portfolio-cat"></h4>
+
+                <!-- <div class="btn-group">
+                  <a class="btn-link" href="http://abequitygroup.com" target="_blank"><i class="icon icon-link"></i></a>
+                  <a class="portfolioFancybox btn-zoom" data-fancybox-group="portfolioFancybox2" href="#portfolio2-inline1"><i class="icon icon-eye"></i></a>
+                </div> -->
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="tile scale-anm ruby web all">
+          <figure class="portfolio-figure">
+            <img src="images/mr-cocktail-66ea889c.png" alt="Mr cocktail" />
+            <figcaption class="portfolio-caption">
+              <div class="portfolio-caption-inner">
+                <h3 class="portfolio-title">Mr. Cocktail</h3>
+                <h4 class="portfolio-cat"></h4>
+
+                <!-- <div class="btn-group">
+                  <a class="btn-link" href="http://abequitygroup.com" target="_blank"><i class="icon icon-link"></i></a>
+                  <a class="portfolioFancybox btn-zoom" data-fancybox-group="portfolioFancybox2" href="#portfolio2-inline1"><i class="icon icon-eye"></i></a>
+                </div> -->
+              </div>
+            </figcaption>
+            <a href="https://mr-cocktail-kitty.herokuapp.com/" target="_blank" class="portfolio-link"></a>
+          </figure>
+        </div>
+      </div>
+
+      <div style="clear:both;"></div>
+    </div>
+</section>
+<!-- End / Portfolio -->
+
+<!-- Form -->
+<section id="form">
+  <div class="container">
+    <h2 class="text-center">
+        Let's work together!
+      </h2>
+      <div class="stick"></div>
+    <form method="POST" action="https://formspree.io/kimikamis@gmail.com">
+      <input type="text" name="name" placeholder="Your name">
+      <input type="email" name="email" placeholder="Your email">
+      <textarea name="message" placeholder="Message"></textarea>
+      <button type="submit">Send a message</button>
+    </form>
+  </div>
+</section>
+<!-- End / Form -->
 
     <div class="footer">
   <div class="footer-links">
