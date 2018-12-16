@@ -1,0 +1,26 @@
+input, textarea {
+  font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: #666260;
+    border: 1px solid #c4beb9;
+    background: #fff;
+    padding: 1em;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+form input {
+    margin-bottom: 0.5em;
+}
+
+button {
+      font-family: "Poppins", sans-serif;
+    font-size: .707em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .1em;
+    border: 1px solid #103742;
+    background-color: #103742;
+    color: #f2f2ee;
+    padding: 0.832em 1.414em 0.707em;
+}
