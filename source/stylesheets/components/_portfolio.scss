@@ -3,6 +3,12 @@
 //   float: none;
 //   margin: auto;
 // }
+#portfolios {
+  position: relative;
+  background-color: #F4F4F4;
+}
+
+
 #portfolios-list {
     margin: 30px 0 60px 0;
     -webkit-column-count: 2;
@@ -48,18 +54,21 @@
   }
 }
 
-
-.tile img {
+.tile {
+  margin-bottom: 1rem;
+  overflow: hidden;
+  img {
     max-width: 100%;
     width: 100%;
     height: auto;
-    margin-bottom: 1rem;
-
+    // margin-bottom: 1rem;
+  }
 }
+
 
 #portfolios .btn {
   font-family: Lato;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: normal;
   text-decoration: none;
   cursor: pointer;
@@ -67,8 +76,9 @@
   line-height: normal;
   padding: .5rem 1rem;
   margin: 0;
+  margin-top: 20px;
   height: auto;
-  border: 1px solid;
+  border: 1px solid #555;
   vertical-align: middle;
   -webkit-appearance: none;
   color: #555;
@@ -88,3 +98,135 @@
   padding: 0;
 }
 
+.portfolio-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  // background: black;
+  opacity: 0;
+  // &:hover {
+  // opacity: 0.1;
+  // }
+}
+
+
+// hover animation
+.portfolio-figure {
+  // top: 0;
+  // left: 0;
+  // z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  // position: absolute;
+  img {
+    position: relative;
+    display: block;
+    width: 100%;
+    opacity: 1;
+    transform: scale3d(1.02, 1.02, 1);
+    transition: opacity 1s, transform 1s;
+    backface-visibility: hidden;
+  }
+}
+
+
+.portfolio-figure .portfolio-caption {
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(32, 39, 52, 0.8);
+    transition: opacity 0.35s linear 0s;
+    backface-visibility: hidden;
+}
+
+.portfolio-figure .portfolio-caption-inner {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5%;
+    position: absolute;
+    transition: transform 0.35s;
+    transform: translate3d(0, 100%, 0);
+    backface-visibility: hidden;
+}
+
+.portfolio-figure .portfolio-title,
+.portfolio-figure .portfolio-cat {
+    opacity: 0;
+    transition: opacity 0.35s;
+    backface-visibility: hidden;
+}
+
+.portfolio-figure .portfolio-title {
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 13px;
+}
+
+.portfolio-figure .portfolio-cat {
+    color: #a7a9ab;
+    font-size: 13px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.portfolio-figure .btn-group a {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #767475;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    transition: transform 0.35s;
+    transform: translate3d(0, 200%, 0);
+}
+
+.portfolio-figure .btn-group a:hover {
+    text-decoration: none;
+}
+
+.portfolio-figure .btn-group .icon {
+    display: block;
+    line-height: 50px;
+    font-size: 25px;
+}
+
+.portfolio-figure:hover img {
+    opacity: 0.85;
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+.portfolio-figure:hover .portfolio-caption,
+.portfolio-figure:hover .portfolio-title,
+.portfolio-figure:hover .portfolio-cat {
+    opacity: 1;
+
+}
+
+.portfolio-figure:hover .portfolio-caption-inner {
+    transform: translate3d(0, 0, 0);
+}
+
+.portfolio-figure:hover .btn-group a {
+    transform: translate3d(0, 0, 0);
+}
+
+.portfolio-figure:hover .btn-group .btn-zoom {
+    transition-delay: 0.3s;
+}
+
+.portfolio-figure:hover .btn-group .btn-link {
+    transition-delay: 0.2s;
+}
+// End / hover animation
